@@ -6,7 +6,7 @@
 
 ## BIG O
 
-- Insertion- O(log n)
+- Insertion- O(log n) - not guaranteed (best and average case)
 - Removal- O(log n)
-- Searching- O(log n)
+- Searching- O(log n) - not guaranteed (best and average case)
 - Access- O(log n)
