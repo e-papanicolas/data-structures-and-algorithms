@@ -3,6 +3,7 @@ class Node {
     this.val = val;
     this.left = null;
     this.right = null;
+    this.count = 0;
   }
 }
 
@@ -71,7 +72,7 @@ class BinarySearchTree {
   find(val) {
     let current = this.root;
     while (current.val !== val) {
-      if (data < current.val) {
+      if (val < current.val) {
         current = current.left;
       } else {
         current = current.right;
@@ -97,6 +98,13 @@ class BinarySearchTree {
       current = current.right;
     }
     return current.val;
+  }
+
+  update(val) {
+    // use this to count occurrences of a value - node class has been updated to have a count
+    let node = this.find(val);
+    node.count++;
+    return node;
   }
 
   remove(val) {
