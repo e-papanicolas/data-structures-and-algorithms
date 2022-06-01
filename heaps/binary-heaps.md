@@ -13,7 +13,7 @@
 
 ## BIG O
 
-- Insertion- O(1)
-- Removal- O(1)
+- Insertion- O(log n)
+- Removal- O(log n)
 - Searching- O(n)
 - Access- O(n)
