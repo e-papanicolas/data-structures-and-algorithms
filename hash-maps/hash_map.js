@@ -6,7 +6,7 @@
 // when we find a collision we search through the array to find the next empty slot
 
 class HashMap {
-  constructor(size = 53) {
+  constructor(size = 137) {
     this.keyMap = new Array(size);
   }
 
