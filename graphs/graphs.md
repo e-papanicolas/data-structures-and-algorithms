@@ -37,3 +37,17 @@
 - Remove Edge: List O(|E|), Matrix O(1)
 - Query: List O(|V| + |E|), Matrix O(1)
 - Storage: List O(|V| + |E|), Matrix O(|V^2|)
+
+## BIG O KEY POINTS
+
+### Adjacency List
+
+- can take up less space(in sparse graphs)
+- faster to iterate over all edges
+- can be slower to lookup specific edge
+
+### Adjacency Matrix
+
+- takes up more space(in sparse graphs)
+- slower to iterate over all edges
+- faster to lookup specific edge
