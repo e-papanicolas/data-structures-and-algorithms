@@ -21,8 +21,19 @@
 3. Unweighted graph: each edge has no value associated with it
 4. Weighted graph: edges have values associated with them (think map with different distances between cities)
 
+## STORING GRAPHS
+
+1. Adjacency matrix (2d structure implemented with nested arrays for rows, columns of 1s and 0s representing edges)
+2. Adjacency list (use an array or list to store the edges or a hash table with key value pairs), for a given key, the value is an array of connections
+
 ## BIG O
 
-- Insertion- O()
-- Removal- O()
-- Access- O()
+|V| - number of vertices
+|E| - number of edges
+
+- Add Vertex: List O(1), Matrix O(|V^2|)
+- Add Edge: List O(1), Matrix O(1)
+- Remove Vertex: List O(|V| + |E|), Matrix O(|V^2|)
+- Remove Edge: List O(|E|), Matrix O(1)
+- Query: List O(|V| + |E|), Matrix O(1)
+- Storage: List O(|V| + |E|), Matrix O(|V^2|)
