@@ -22,7 +22,7 @@ class HashMap {
   showDistro() {
     let n = 0;
     for (let i = 0; i < this.map.length; ++i) {
-      if (this.map[i][0] != undefined) {
+      if (this.map[i][0] !== undefined) {
         print(i + ": " + this.map[i]);
       }
     }
