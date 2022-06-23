@@ -39,6 +39,7 @@ class Graph {
     const result = [];
     const visited = {};
     let current;
+    visited[start] = true;
     // loop as long as there is anything in the queue
     while (queue.length) {
       // remove the first vertex in the queue and push it to visited
