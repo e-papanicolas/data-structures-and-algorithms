@@ -1,6 +1,6 @@
 ## NOTES
 
-- trie is dervied from retrieval
+- trie is derived from retrieval
 - efficient in handling strings
 - is always a set of linked nodes with an empty root node
 - each node represents a unique alphabet
@@ -21,4 +21,4 @@
 - retrieval/insertion time in the **worst case** is better than hash maps or binary search trees
 - Insertion- O(key_length)
 - Searching- O(key_length)
-- Memory Complexity: O(APLHABET*SIZE * key*length * N)
+- Memory Complexity: O(alphabetSize x keyLength x N)
