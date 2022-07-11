@@ -19,3 +19,6 @@
 ## BIG O
 
 - retrieval/insertion time in the **worst case** is better than hash maps or binary search trees
+- Insertion- O(key_length)
+- Searching- O(key_length)
+- Memory Complexity: O(APLHABET*SIZE * key*length * N)
