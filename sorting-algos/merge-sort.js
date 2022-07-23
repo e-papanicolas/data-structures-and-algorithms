@@ -45,3 +45,8 @@ function mergeSort(arr) {
 
   return merge(left, right);
 }
+
+const array = [10, 14, 18, 35, 55, 37, 1, 2, 45, 63, 64, 12];
+
+const answer = mergeSort(array);
+console.log(answer);

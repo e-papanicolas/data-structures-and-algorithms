@@ -62,8 +62,8 @@ class Graph {
         // if any of those values have not been visited, recursively invoke the helper with that vertex
         if (!visited[neighbor]) return dfs(neighbor);
       });
+      // invoke the helper function with the starting vertex
     })(start);
-    // invoke the helper function with the starting vertex
     return result;
   }
 }
