@@ -26,6 +26,8 @@ Sorting:
 - Quick sort
 - Other sorting algos: heap sort, radix sort, bucket sort
 
+Etc:
+
 - Dynamic Programming
 - Bit manipulation
 
