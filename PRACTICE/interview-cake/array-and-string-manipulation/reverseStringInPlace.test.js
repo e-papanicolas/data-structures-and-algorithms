@@ -2,7 +2,7 @@
 // Why an array of characters instead of a string?
 // The goal of this question is to practice manipulating strings in place. Since we're modifying the input, we need a mutable ↴ type like an array, instead of JavaScript's immutable strings.
 
-// BIG O: time O() / space O()
+// BIG O: time O(n) / space O(1)
 
 const reverseString = (chars) => {
   let start = 0;
