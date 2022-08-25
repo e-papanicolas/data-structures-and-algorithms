@@ -20,20 +20,18 @@ const mergeRanges = (meetings) => {
   return result;
 };
 
-describe("merges an array of multiple meeting times into condensed ranges", () => {
-  it("returns a condensed range of the input array", () => {
-    expect(
-      mergeRanges([
-        { startTime: 0, endTime: 1 },
-        { startTime: 3, endTime: 5 },
-        { startTime: 4, endTime: 8 },
-        { startTime: 10, endTime: 12 },
-        { startTime: 9, endTime: 10 },
-      ])
-    ).toStrictEqual([
+test("merges an array of multiple meeting times into condensed ranges", () => {
+  expect(
+    mergeRanges([
       { startTime: 0, endTime: 1 },
-      { startTime: 3, endTime: 8 },
-      { startTime: 9, endTime: 12 },
-    ]);
-  });
+      { startTime: 3, endTime: 5 },
+      { startTime: 4, endTime: 8 },
+      { startTime: 10, endTime: 12 },
+      { startTime: 9, endTime: 10 },
+    ])
+  ).toStrictEqual([
+    { startTime: 0, endTime: 1 },
+    { startTime: 3, endTime: 8 },
+    { startTime: 9, endTime: 12 },
+  ]);
 });

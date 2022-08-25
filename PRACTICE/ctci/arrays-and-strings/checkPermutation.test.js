@@ -27,12 +27,12 @@ const isPermutation = (str1, str2) => {
 };
 
 describe("detects if one string is a permutation of the other", () => {
-  it("returns true when one is a permutation of the other", () => {
+  test("returns true when one is a permutation of the other", () => {
     expect(isPermutation("abba", "aabb")).toBe(true);
     expect(isPermutation("olleh", "hello")).toBe(true);
     expect(isPermutation("aaabcd", "abacad")).toBe(true);
   });
-  it("returns false when one is not a permutation of the other", () => {
+  test("returns false when one is not a permutation of the other", () => {
     expect(isPermutation("abba", "aaba")).toBe(false);
     expect(isPermutation("hello", "hllo")).toBe(false);
     expect(isPermutation("a", "ababbb")).toBe(false);

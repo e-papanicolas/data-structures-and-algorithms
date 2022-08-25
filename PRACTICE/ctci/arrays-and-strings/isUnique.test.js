@@ -20,12 +20,12 @@ const isUnique = (str) => {
 };
 
 describe("detects if a string has all unique characters", () => {
-  it("returns true when all characters are unique", () => {
+  test("returns true when all characters are unique", () => {
     expect(isUnique("abcdefg")).toBe(true);
     expect(isUnique("visual")).toBe(true);
     expect(isUnique("studio")).toBe(true);
   });
-  it("returns false when there are repeated characters", () => {
+  test("returns false when there are repeated characters", () => {
     expect(isUnique("hello")).toBe(false);
     expect(isUnique("javascript")).toBe(false);
   });

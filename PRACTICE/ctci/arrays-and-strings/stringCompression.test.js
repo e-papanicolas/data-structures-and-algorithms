@@ -37,7 +37,7 @@ const countCompression = (str) => {
 };
 
 describe("compresses a string", () => {
-  it("returns the compressed string with correct character counts", () => {
+  test("returns the compressed string with correct character counts", () => {
     expect(isPermutation("aabcccccaaa")).toBe("a2b1c5a3");
     expect(isPermutation("hello")).toBe("hello");
     expect(isPermutation("abbbbbbbbbbbb")).toBe("ab12");
